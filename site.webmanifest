@@ -1,0 +1,28 @@
+{
+  "name": "Lexyn Solutions",
+  "short_name": "Lexyn",
+  "description": "Lexyn Solutions is a South African growth consulting firm helping technology, healthcare, and retail companies enter new markets, build strategic partnerships, and execute commercial growth.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F2EC",
+  "theme_color": "#15171B",
+  "lang": "en-ZA",
+  "dir": "ltr",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/Logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
