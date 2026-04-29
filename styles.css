@@ -368,6 +368,7 @@ p { margin: 0; }
 .brand:hover .brand__mark::before { transform: translateY(0); }
 .brand:hover .brand__mark span { color: var(--ink); }
 .brand__mark--lg { width: 48px; height: 48px; font-size: 24px; border-radius: 12px; }
+.footer__logo-img { height: 144px; width: auto; display: block; }
 .brand__word {
   display: flex;
   flex-direction: column;
