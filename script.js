@@ -1,4 +1,4 @@
-// Lexyn Solutions — premium interactions
+// Lexyn Consulting — premium interactions
 
 (() => {
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

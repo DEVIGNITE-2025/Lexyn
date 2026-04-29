@@ -1,4 +1,4 @@
-# robots.txt for Lexyn Solutions
+# robots.txt for Lexyn Consulting
 # https://lexyn.co.za/
 
 User-agent: *

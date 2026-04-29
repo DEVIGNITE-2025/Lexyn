@@ -1,5 +1,5 @@
-﻿/* ===============================================
-   LEXYN SOLUTIONS â€” Awwwards-grade premium UI
+/* ===============================================
+   Lexyn Consulting — Awwwards-grade premium UI
    =============================================== */
 
 /* ---------- Tokens ---------- */
@@ -1300,7 +1300,7 @@ p { margin: 0; }
   padding-top: clamp(48px, 5vw, 72px);
 }
 
-/* ---- Contact Form â€” underline style ---- */
+/* ---- Contact Form — underline style ---- */
 .contact-form { width: 100%; }
 .contact-form__row {
   display: grid;
@@ -1490,7 +1490,7 @@ p { margin: 0; }
   position: relative;
 }
 .footer__cols a::before {
-  content: 'â†’';
+  content: '→';
   position: absolute;
   left: -18px;
   opacity: 0;
