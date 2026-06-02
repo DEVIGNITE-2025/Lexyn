@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexyn Invoice Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="app-header">
+            <a class="brand" href="../index.html" aria-label="Lexyn Consulting home">
+                <span class="brand__mark">L</span>
+                <span class="brand__text">
+                    <span>Lexyn</span>
+                    <small>Consulting</small>
+                </span>
+            </a>
+            <div class="app-header__copy">
+                <p class="eyebrow">Invoice Studio</p>
+                <h1>Generate a Lexyn invoice</h1>
+            </div>
+        </header>
+
+        <form id="invoice-form">
+            <div class="form-grid">
+                <input type="text" id="invoiceNumber" placeholder="Invoice Number (e.g. INV0001)" required />
+                <input type="date" id="invoiceDate" required />
+                <input type="text" id="dueDate" placeholder="Date invoice is due" required />
+                <input type="text" id="clientName" placeholder="Client Name" required />
+                <textarea id="clientAddress" placeholder="Client Address" required></textarea>
+                <input type="text" id="clientVAT" placeholder="Client VAT Number" required />
+                <input type="email" id="clientEmail" placeholder="Client Email" required />
+            </div>
+
+            <div class="line-items">
+                <p class="eyebrow">Line items</p>
+                <div id="items-container">
+                    <div class="item-row">
+                        <input type="text" class="item-description" placeholder="Description" required />
+                        <input type="number" class="item-rate" placeholder="Rate (ZAR)" min="0" step="0.01" required />
+                        <input type="number" class="item-qty" placeholder="Quantity" min="1" step="1" required />
+                    </div>
+                </div>
+                <button class="btn btn--secondary" type="button" onclick="addItem()">+ Add item</button>
+            </div>
+
+            <textarea id="invoiceNote" placeholder="Custom Note to Client (e.g., deposit terms, thank-you note, etc.)" rows="4" required></textarea>
+
+            <div class="actions">
+                <button class="btn btn--primary" type="button" onclick="generateInvoice()">Generate invoice</button>
+                <button class="btn btn--dark" id="download-btn" type="button" onclick="downloadPDF()" hidden>Download PDF</button>
+            </div>
+        </form>
+
+        <div id="invoice-preview" class="invoice" aria-live="polite">
+            <!-- Invoice will be inserted here -->
+        </div>
+    </div>
+
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
